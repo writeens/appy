@@ -1,0 +1,120 @@
+.Board{
+    display: flex;
+    width: 80%;
+    height: 80%;
+}
+.Board-sidebar{
+    background: #9575cd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1),
+    inset 0 0 25px #7e57c2;
+    z-index: 2;
+}
+
+.Board-title {
+    font-size: 4rem;
+    margin: 2rem;
+    color: white;
+    font-weight: 200;
+    letter-spacing: 0.6rem;
+}
+
+.Board-title span {
+    font-weight: 900;
+    letter-spacing: 0;
+}
+.Board-sidebar img {
+    width: 50%;
+    border-radius: 50%;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1);
+}
+.Board-jokes {
+    height: 90%;
+    background: white;
+    align-self: center;
+    overflow-y: scroll;
+    width: 70%;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1);
+}
+.Board-spinner{
+    color: white;
+    text-align: center;
+}
+.Board-button {
+    font-size: 1.5rem;
+    width: 50%;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    margin: 2rem;
+    cursor: pointer;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(155deg, rgba(179,252,200,1) 0%, rgba(179,252,200,1) 50%, rgba(179,229,252,1) 50%, rgba(179,229,252,1) 100%);
+}
+.Board-sm{
+    display: none;
+}
+
+@media screen and (max-width: 800px){
+    .Board{
+        width: 100%;
+        height: 95%;
+        flex-direction: column;
+        margin: 0.5rem;
+    }
+    .Board-sidebar{
+        display: none;
+    }
+    .Board-jokes {
+        width:inherit;
+        height: 100%;
+    }
+    .Board-sm {
+        display: flex;
+        justify-content: space-around;
+    }
+    .Board-sm-title{
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 900;
+        letter-spacing: 0.3rem;
+        margin: 0.5rem;
+    }
+    .Board-sm-button {
+        margin: 0.5rem;
+        font-size: 1rem;
+        border-radius: 2rem;
+        padding: 0rem 1rem;
+        color: white;
+        font-weight: 800;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1);
+        background: rgba(179,229,252,1);
+    }
+    .Board-spinner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    .Board-title {
+        font-size: 2rem;
+        margin: 1rem;
+        color: white;
+        font-weight: 200;
+        letter-spacing: 0.3rem;
+        text-align: center;
+    }
+    .fa-8x {
+        font-size: 4rem;
+    }
+}
