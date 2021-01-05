@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://writeens.github.io/appy",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "gh-pages": "^2.0.1",
     "localforage": "^1.7.3",
     "react": "^16.8.6",
